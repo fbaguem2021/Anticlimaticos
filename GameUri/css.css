@@ -1,0 +1,112 @@
+:root {
+
+  --visi: visible;
+  --backgroun: transparent;
+  cursor: var(--visi);
+  --cX: 40vw;
+  --cY: 40vh;
+
+}
+
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  background: var(--backgroun);
+}
+
+
+table,
+th,
+td {
+  border: 1px solid black;
+
+}
+
+th,
+td,
+img {
+  width: 70px;
+  height: 70px;
+  /* content: center; */
+  text-align: center;
+
+}
+
+
+.block {
+
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  /* background: url("./media/petrollsmall/water_corner_bottom_left_bottom_strip11.png") no-repeat center bottom; */
+  z-index: 1;
+  vertical-align: middle;
+  animation: WaterFluid 1s steps(11) normal;
+
+  /* background-position-x: -770px; */
+}
+
+/* .backgroundTiles { */
+
+/* width:70px;
+  height:70px;
+  background-position: center; */
+/* background: url("./media/petrollsmall/water_corner_bottom_left_bottom_strip11.png") no-repeat center bottom; */
+/* z-index: 1;
+  vertical-align: middle;
+ background-image: url('./media/TileFondo2.png');
+ background-blend-mode: difference; */
+
+/* background-position-x: -770px; */
+/* } */
+
+@keyframes WaterFluid {
+  0% {
+    background-position-x: 0px;
+    /*   transform: translateX(-100px) scaleX(1); */
+  }
+
+
+  100% {
+    background-position-x: -770px;
+
+
+    /*   transform: translateX(-100px) scaleX(-1); */
+  }
+}
+
+.imge {
+  /* background: url("./media/BackgroundTile.PNG"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.burbujasGIF {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  pointer-events: none;
+  background: url('./media/BUbles2.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.PlayPauseButton {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  background-image: url('./media/StopButt.png');
+  height: 50px;
+  width: 50px;
+}

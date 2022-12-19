@@ -1,0 +1,81 @@
+.overlay {
+    z-index: 1000;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+}
+.popup * {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.popup {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.popup-buttons {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.popupscreen {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 1125px;
+    height: 562.5px;
+}
+.popoup-body {
+    position: relative;
+    top: 32.5%;
+    left: 30%;
+    right: 30%;
+    bottom: 32.5%;
+    width: 40%;
+    height: 35%;
+    background-color: white;
+    border-radius: 25px;
+}
+#popup__head p {
+    padding: 0 20px;
+    text-align: left;
+}
+.popup-content p {
+    margin-top: 5px;
+}
+.popup-content :not(span) {
+    padding: 10px 0 0 0 ;
+    text-align: center;
+}
+
+.popup-btn, .space {
+    display: inline-block;
+}
+.space {
+    width: 150px;
+}
+.popup-btn {
+    width: 75px;
+    padding: 5px 0 ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* 
+.popup-btn:nth-of-type(1) {
+    background-color: lightgreen;
+}
+.popup-btn:nth-of-type(2) {
+    background-color: grey;
+}
+*/
+[name=repeat], [name=close] {
+    background-color: lightgreen;
+}
+[name=quit] {
+    background-color: grey;
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  
+  }
+  
+  .bg-custom {
+    background-color: var(--c2);
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+  }
+  
+  input,
+  button {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2,
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--c1);
+  
+  }
+  
+  /* .container {
+    background-color: var(--c2);
+  } */
+  
+  
+  /*NAVBAR*/
+  
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-link {
+    color: var(--c5);
+  }
+  
+  .nav-link:hover {
+    color: var(--c5);
+    font-weight: 600;
+  
+  }
+  
+  /* .navbar-bg-custom {
+    background-color: var(--c1);
+  } */
+  
+ .navbar-bg-custom .container {
+    background-color: var(--c1);
+    color: white;
+  }
+  
+  .navbar {
+    background-color: var(--c1);
+
+  }
+  
+ .btn {
+    color: #fff;
+  }
+  
+  .btn:active {
+    box-shadow: none;
+  }
+  
+  .btn:active:focus {
+    background-color: var(--c7);
+    color: var(--c5);
+  }
+  .BlueB {
+    background-color: var(--c2);
+    color: var(--c5);
+    font-weight: 500;
+  }
+  
+  .BlueB:hover {
+    background-color: var(--c1);
+    border: 1px solid var(--c5);
+    color: var(--c5);
+    font-weight: 600;
+  }

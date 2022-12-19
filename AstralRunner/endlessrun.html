@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Runner</title>
+    <link rel="stylesheet" href="./estilo/estil.css">
+    <script src="../js/cookies.js"></script>
+</head>
+
+<body>
+    <div class="magistral">
+        <div id="izquierda"></div>
+        <div id="derecha"></div>
+        <div id="inicio">
+            <button id="botonsito" onclick="startgame()">START</button>
+            <a href="../index.php"><button id="botonsito2">EXIT</button></a>
+            <p>Para saltar presione la barra espaciadora</p>
+        </div> 
+        <div id="joc">
+            <div id="score" value="0">SCORE: </div>
+            <div id="player">
+                <img id="playerrun" src="" height="70" width="50">
+            </div>
+            <div id="obstacle">
+                <img src="./media/barrel.png" height="50" width="35">
+            </div>
+            <div id="obstacle2">
+                <img src="./media/oilspill.png" height="30" width="100">
+            </div>
+        </div>
+        <div id="mapa">
+            <img src="./media/background.png" height="300" width="750">
+        </div>
+        <div id="final">
+            <button id="botonsito3" onclick="playagain()">PLAY AGAIN</button>
+            <button id="botonsito4" onclick="exit()">EXIT</button>
+            <div id="finalScore" value="0">FINAL SCORE: </div>
+        </div>
+    </div>
+</body>
+<script src="./sinfin.js"></script>
+
+</html>

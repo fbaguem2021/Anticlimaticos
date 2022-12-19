@@ -1,0 +1,13 @@
+:root {
+    /* CAÑÓN */
+    --cannon-top:       300px;
+    --cannon-left:      20px;
+    --cannon-position:  absolute;
+    /* RUEDA */
+    --wheel-top:    calc( var(--cannon-size) - var(--wheel-size) );
+    --wheel-left:   calc( var(--cannon-size)/2 - var(--wheel-size)/2 );
+    /* TEXTO CAÑON */
+    --cannontext-top: calc( var(--cannon-top) + var(--cannon-size) );
+    --cannontext-left: calc( var(--cannon-top) + var(--cannon-size)/2 );
+
+}

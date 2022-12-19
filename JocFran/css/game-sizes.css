@@ -1,0 +1,8 @@
+:root {
+    --cannon-size:          75px;
+    --wheel-size:           calc(var(--cannon-size) / 2 );
+    --fire-size:            115px;
+    --wheelspan-radius:     90px;
+    --progress-width:       300px;
+    --progress-height:      10px;
+}

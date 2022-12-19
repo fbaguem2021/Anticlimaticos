@@ -1,0 +1,41 @@
+.allpage {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  /* margin-left: 5%;
+  margin-right: 5%; */
+}
+
+.Fondo1 {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-color: #379683;
+  border-radius: 7px;
+
+}
+
+.Imagen {
+  position: absolute;
+  top: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 700px;
+}
+
+.Titulo {
+  z-index: 1000;
+  position: absolute;
+  border-radius: 7px;
+  top: 20%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  z-index: 100;
+  background-color: #5cdb95;
+  src: url('../Typos/Anurati-Regular.otf');
+  font-family: test;
+  color: #05386B;
+}

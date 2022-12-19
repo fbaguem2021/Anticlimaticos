@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    user-select: none;
+}
+
+body {
+    background-color: blue;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+
+.bg-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-video video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left center;
+    position: fixed;
+    /* bottom: 0px; */
+    z-index: -1;
+}
+
+.main-logo {
+    margin: 0px auto;
+    max-width: 40%;
+    width: 100%;
+    margin-bottom: 0px;
+    z-index: 99;
+    position: relative;
+}
+
+.main-logo img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.main-play-btn {
+    position: relative;
+    text-decoration: none;
+}
+
+.main-play-btn::before {
+    position: absolute;
+    content: '';
+    left: 34px;
+    top: -8px;
+    z-index: 3;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.main-play-btn:hover {
+    background: linear-gradient(97deg, rgba(255, 209, 64, 1) 0%, rgba(255, 209, 64, 1) 0%);
+    box-shadow: #e3a700 -0px 1px, #e3a700 -0px 2px, #e3a700 -0px 3px, #e3a700 -0px 4px, #e3a700 -0px 5px, #e3a700 -0px 6px, #e3a700 -0px 7px, #e3a700 -0px 8px, #e3a700 -0px 9px, #e3a700 -0px 10px, #e3a700 -0px 11px;
+}
+
+.main-play-btn {
+    margin: 0px, 20px;
+    color: #ffffff;
+    background: linear-gradient(97deg, rgba(108, 203, 255, 1) 0%, rgba(108, 203, 255, 1) 0%);
+    width: 210px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 14px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.13);
+}
+
+
+.main-play-btn {
+    margin: 0 auto;
+    width: 320px;
+    height: 60px;
+    font-size: 2rem;
+}
+
+.main-play-btn::before {
+    left: 5px;
+    top: 0px;
+}
+
+/*Responsive*/
+@media(max-width:1100px) {
+    .main-logo {
+        max-width: 55%;
+    }
+}
+
+@media(max-width:600px) {
+    .main-play-btn {
+        width: 250px;
+        height: 45px;
+        font-size: 1.6rem;
+    }
+
+    .main-logo {
+        max-width: 70%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.modal-body video {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
