@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Windows Command Prompt';
+  src: url('typos/Windows-Command-Prompt.woff2') format('woff2'),
+    url('typos/Windows-Command-Prompt.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.MenuIncio {
+  visibility: visible;
+
+  position: absolute;
+
+  background: url('./media/tocho.png') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: difference;
+
+
+  z-index: 5;
+  height: 800px;
+  width: 800px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+}
+
+.MenuPausa {
+  height: 800px;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 20%;
+
+  position: absolute;
+
+  z-index: 3;
+  visibility: hidden;
+  background: url("./media/Manate.png") no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.MenuVictoria {
+  height: 800px;
+  width: 800px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 20%;
+  position: absolute;
+
+  z-index: 4;
+  visibility: hidden;
+  background: url('./media/gaviota.png') no-repeat center center fixed;
+  background-size: contain;
+  position: absolute;
+}
+
+.ElJuego {
+  visibility: hidden;
+  z-index: 2;
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+
+}
+
+.Animaciones {
+  /* visibility: hidden; */
+
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.TeclasDeFondo {
+  height: 750px;
+  width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+  z-index: 0;
+  background-image: url("./media/MetalicBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Pantalla {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+body {
+  background: url("./media/background-1.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+}
+
+.divo {
+
+  vertical-align: middle;
+
+  position: relative;
+
+}
+
+.BotonMenu {
+  background-size: cover;
+  height: 159px;
+  width: 158px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.TextoPausa {
+  background-color: #fee57e;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: xx-large;
+  font-family: 'Windows Command Prompt';
+  color: #0c2739;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.TextoWellCome {
+
+  font-family: 'Windows Command Prompt';
+  text-align: center;
+  background-color: #fee57e;
+  background-attachment: text
+}
+
+.Score {
+  left: 0;
+  top: 15%;
+
+  position: relative;
+  font-size: xx-large;
+  font-family: 'Windows Command Prompt';
+  z-index: 10;
+}
+
+.tipoz {
+  font-size: xx-large;
+  font-family: 'Windows Command Prompt';
+}

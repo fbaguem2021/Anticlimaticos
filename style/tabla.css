@@ -1,0 +1,10 @@
+.scroll-table {
+    max-height: 300px;
+}
+.scroll-table table thead.sticky-top {
+    z-index: 900;
+}
+.scroll-table table {
+    margin: 0;
+    overflow-y: auto;
+}

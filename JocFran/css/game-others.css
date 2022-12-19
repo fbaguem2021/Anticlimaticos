@@ -1,0 +1,8 @@
+:root {
+    --progress-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    --progressbar-line-transition: left 25ms ease-in-out;
+}
+.text {
+    font-size: 20px;
+    text-align: left;
+}

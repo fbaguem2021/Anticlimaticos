@@ -1,0 +1,15 @@
+:root{
+    --texto: var(--c5);
+    --alert: var(--c1);
+
+    /* SECONDARY - CRIDA L'ATENCIÓ */
+    --c1 : #05386B;
+    /* PRIMARY */
+    --c2: #379683;
+    --c3: #5CDB95;
+    --c4: #8EE4AF;
+    /* TEXT */
+    --c5: #EDF5E1;
+    --c6: #020503;
+    --c7: #F29720;
+}
