@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-image: url("../assets/img/backgrounds/body_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#map {
+    border: 2px solid;
+    width: 1300px;
+    height: 670px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../assets/img/backgrounds/map_background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#contenedorAzul {
+    width: 200px;
+    height: 200px;
+    background-image: url("../assets/img/containers/contpapel.gif");
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+
+#contenedorVerde {
+    width: 200px;
+    height: 200px;
+    background-image: url("../assets/img/containers/contvidrio.gif");
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+
+#contenedorMarron {
+    width: 200px;
+    height: 200px;
+    background-image: url("../assets/img/containers/contorganica.gif");
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+
+#contenedorAmarillo {
+    width: 200px;
+    height: 200px;
+    background-image: url("../assets/img/containers/contlata.gif");
+    display: inline-block;
+    justify-content: space-evenly;
+    background-position: center;
+    background-size: cover;
+}
+
+.posicionarContendores {
+    text-align: center;
+    position: absolute;
+    bottom: 70px;
+    height: 200px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.posicionarTimerScore {
+    text-align: center;
+    position: absolute;
+    bottom: 1px;
+    height: 50px;
+    width: 1300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#puntuacion,
+#tiempo {
+    width: 300px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+#puntuacion,
+p {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    font-size: 30px;
+}
+
+#tiempo,
+p {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    font-size: 30px;
+}
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
+
+.playAgainButton {
+    background-color: green;
+}
+
+.exitButton {
+    background-color: red;
+}

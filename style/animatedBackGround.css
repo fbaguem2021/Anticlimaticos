@@ -1,0 +1,45 @@
+@font-face {
+  src: url('../typos/Anurati-Regular.otf');
+  font-family: test;
+  color: #05386B;
+
+}
+
+:root {
+  --cX: calc(50% - 10rem);
+  --cY: calc(50% - 10rem);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+
+  overflow: visible;
+  background-repeat: no-repeat;
+
+}
+
+.scene {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url('../media/backgroundAfter.png') 50% 50% no-repeat fixed;
+  border-radius: 25px;
+}
+
+.magic {
+  z-index: 10;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: url('../media/backgroundBefore.png') 50% 50% no-repeat fixed;
+  top: var(--cY);
+  left: var(--cX);
+  border-radius: 50%;
+}

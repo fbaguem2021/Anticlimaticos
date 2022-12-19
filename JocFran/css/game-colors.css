@@ -1,0 +1,15 @@
+:root {
+    --body-bg-dark: #292b37;
+    --body-bg-light: white;
+    --body-text-color: rgb(29, 29, 29);
+
+    /* CAÑON */
+    --wheel-bg-dark:  #292b37;
+    --wheel-bg-light: white;
+    --bullet-color: #2c96dd;
+
+    /* PROGRESS BAR */
+    --progressbar-bg: #e0e0e0;
+    --progressline-bg: linear-gradient(to right, red, greenyellow);
+    --progressbar-line-bg: black;
+}

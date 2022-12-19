@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Rush</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./assets/img/icons/logo.png" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/cookies.js"></script>
+</head>
+<body>
+    <div id="map">
+        <div class="posicionarContendores">
+            <div id="contenedorAzul" class="dropzone"></div>
+            <div id="contenedorVerde" class="dropzone"></div>
+            <div id="contenedorMarron" class="dropzone"></div>
+            <div id="contenedorAmarillo" class="dropzone"></div>
+        </div>
+        <div class="posicionarTimerScore">
+            <div>
+                <p id="puntuacion">PUNTUACIÓN: 0</p>
+                <p id="tiempo">TIEMPO: 00:00</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/spawn.js" type="module"></script>
+    <script src="./js/scoreTimer.js" type="module"></script>
+    <script src="./js/movement.js" type="module"></script>
+</body>
+
+</html>

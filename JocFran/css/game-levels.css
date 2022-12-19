@@ -1,0 +1,67 @@
+:root {
+    --lv1-left:     825px;
+    --lv1-top:      420px;
+    --lv1-bottom:   50px;
+    --lv1-size:     100px;
+
+    --lv2-left:     700px;
+    --lv2-top:      405px;
+    --lv2-bottom:   50px;
+    --lv2-size:     100px;
+
+    --lv3-left:     1025px;
+    --lv3-top:      410px;
+    --lv3-bottom:   50px;
+    --lv3-size:     75px;
+
+    --lv4-left:     580px;
+    --lv4-top:      410px;
+    --lv4-bottom:   50px;
+    --lv4-size:     75px;
+
+    --lv5-left:     825px;
+    --lv5-top:      460px;
+    --lv5-bottom:   50px;
+    --lv5-size:     50px;
+}
+/* level 1 */
+[name="level1"] {
+    left: var(--lv1-left);
+    top: var(--lv1-top);
+    width: var(--lv1-size);
+    height: var(--lv1-size);
+}
+/* level 2 */
+[name="level2"] {
+    left: var(--lv2-left);
+    top: var(--lv2-top);
+    width: var(--lv2-size);
+    height: var(--lv2-size);
+}
+/* level 3 */
+[name="level3"] {
+    left: var(--lv3-left);
+    top: var(--lv3-top);
+    width: var(--lv3-size);
+    height: var(--lv3-size);
+}
+/* level 4 */
+[name="level4"] {
+    left: var(--lv4-left);
+    top: var(--lv4-top);
+    width: var(--lv4-size);
+    height: var(--lv4-size);
+}
+/* level 5 */
+[name="level5"] {
+    left: var(--lv5-left);
+    top: var(--lv5-top);
+    width: var(--lv5-size);
+    height: var(--lv5-size);
+}
+
+#destinationPoint[name="level1"] {
+    left: var(--lv1-left);
+    top: calc( var(--lv1-top) + 97px );
+}
+
